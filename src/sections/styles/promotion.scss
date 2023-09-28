@@ -1,0 +1,31 @@
+.promotion {
+  display: flex;
+  gap: 1.667vw;
+  margin: 3.229vw 0;
+  @media screen and (max-width: 834px) {
+    gap: 3.717vw;
+  }
+  @media screen and (max-width: 320px) {
+    overflow-x: scroll;
+    gap: 8vw;
+  }
+  .promotion__element {
+    max-width: 21.667vw;
+    @media screen and (max-width: 834px) {
+      max-width: 28.297vw;
+    }
+    @media screen and (max-width: 320px) {
+      max-width: 100%;
+      width: 100%;
+    }
+    img {
+      width: 21.667vw;
+      @media screen and (max-width: 834px) {
+        width: 28.297vw;
+      }
+      @media screen and (max-width: 320px) {
+        width: 90vw;
+      }
+    }
+  }
+}

@@ -1,0 +1,110 @@
+.pizza-card {
+  position: relative;
+  padding: 1.042vw 1.667vw 2.083vw 1.667vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  @media screen and (max-width: 834px) {
+    width: 26.379vw;
+    padding: 0.959vw 0.959vw 4.796vw 0.959vw;
+  }
+  @media screen and (max-width: 320px) {
+    flex-direction: row;
+    width: 90%;
+    align-items: flex-start;
+    padding: 4.375vw 2.5vw 7.5vw 3.75vw;
+  }
+  .pizza-card__filter {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 0;
+    @media screen and (max-width: 834px) {
+      display: block;
+    }
+    svg {
+      @media screen and (max-width: 320px) {
+        width: 3.75vw;
+        height: 3.75vw;
+      }
+    }
+  }
+  &:hover {
+    .pizza-card__filter {
+      display: block;
+    }
+  }
+
+  img {
+    width: 11.042vw;
+    height: 11.042vw;
+    @media screen and (max-width: 834px) {
+      width: 20.264vw;
+      height: 20.264vw;
+    }
+    @media screen and (max-width: 320px) {
+      width: 24.063vw;
+      height: 24.063vw;
+    }
+  }
+  h4 {
+    margin-bottom: 6px;
+  }
+  p {
+    text-align: center;
+    margin-bottom: 8px;
+  }
+  .pizza-card__sizes {
+    display: flex;
+    justify-content: center;
+    gap: 2px;
+    margin-bottom: 0.625vw;
+    button {
+      border: none;
+      width: 3.021vw;
+      color: #82909f;
+      background-color: none;
+      font-family: "Roboto";
+      font-size: 0.625vw;
+      font-weight: 700;
+      line-height: 0.938vw;
+      @media screen and (max-width: 834px) {
+        font-size: 1.439vw;
+        line-height: 2.158vw;
+        width: 6.954vw;
+      }
+      @media screen and (max-width: 320px) {
+        font-size: 3.75vw;
+        line-height: 5.625vw;
+        width: 16.25vw;
+        margin-bottom: 4.375vw;
+      }
+    }
+    .selected {
+      color: black;
+    }
+  }
+  .pizza-card__price {
+    font-size: 1.25vw;
+    font-family: "Roboto";
+    font-weight: 700;
+    line-height: 1.563vw;
+    @media screen and (max-width: 834px) {
+      font-size: 2.398vw;
+      line-height: 3.597vw;
+    }
+    @media screen and (max-width: 320px) {
+      display: none;
+    }
+  }
+  .pizza-card__order {
+    padding: 0.729vw 3.646vw;
+    @media screen and (max-width: 320px) {
+      font-size: 5vw;
+      padding: 1.25vw 6.563vw;
+      font-weight: 500;
+      text-transform: lowercase;
+    }
+  }
+}

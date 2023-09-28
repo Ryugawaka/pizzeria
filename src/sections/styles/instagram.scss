@@ -1,0 +1,36 @@
+.instagram {
+  text-align: center;
+  h2 {
+    margin-bottom: 0.677vw;
+  }
+  h4 {
+    color: #848a9a;
+    margin-bottom: 2.396vw;
+  }
+  .instagram__photos {
+    display: flex;
+    flex-wrap: wrap;
+    img {
+      width: 19.8vw;
+      height: 19.8vw;
+      @media screen and (max-width: 834px) {
+        width: 33.333vw;
+        height: 33.333vw;
+      }
+      @media screen and (max-width: 320px) {
+        width: 50vw;
+        height: 50vw;
+      }
+    }
+    .instagram__desctop {
+      @media screen and (max-width: 834px) {
+        display: none;
+      }
+    }
+    .instagram__tablet {
+      @media screen and (max-width: 320px) {
+        display: none;
+      }
+    }
+  }
+}
